@@ -31,7 +31,10 @@ public class PlayerBase : CharacterBase {
 
     private void FixedUpdate() {
         if(GetComponent<CharacterFSM>().state != CharacterState.Attack && !Joystick.IsPointerUp)
+        {
             MoveDir = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
+        }
+            
     }
 
     public bool PlayerInMonsterRange(Vector3 minRange, Vector3 maxRange) {
