@@ -71410,14 +71410,6 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.9
-    functionName: AttackBoss
-    data: 
-    objectReferenceParameter: {fileID: 1871650784605802637, guid: 0d394e4b5cfdd4f84a5465a6a6076087,
-      type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.9
     functionName: AttackAnimEvent
     data: 
     objectReferenceParameter: {fileID: 1871650784605802637, guid: 0d394e4b5cfdd4f84a5465a6a6076087,
