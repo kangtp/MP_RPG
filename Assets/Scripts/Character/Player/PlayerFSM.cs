@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Diagnostics;
+using UnityEngine;
 
 public class PlayerFSM : CharacterFSM {
     private float moveSpeed = 10f;
@@ -10,7 +12,11 @@ public class PlayerFSM : CharacterFSM {
         do {
             yield return null;
             if(!Joystick.IsPointerUp)
+            {
+                UnityEngine.Debug.Log("들어와야지");
                 SetState(CharacterState.Walk);
+            }
+                
             else if(playerBase.AttackBtnPressed)
                 SetState(CharacterState.Attack);
         } while(!IsNewState); //do 문 종료조건.
