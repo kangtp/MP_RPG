@@ -54563,6 +54563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8034706642483778711, guid: 0d394e4b5cfdd4f84a5465a6a6076087,
         type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2006477421950083525}
+    - target: {fileID: 8034706642483778711, guid: 0d394e4b5cfdd4f84a5465a6a6076087,
+        type: 3}
       propertyPath: Anim_levelup
       value: 
       objectReference: {fileID: 1831164387}
@@ -54681,6 +54686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e049a9e6c55beac40afa0efff8e9599f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2006477421950083525 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1887285629164371164, guid: 0d394e4b5cfdd4f84a5465a6a6076087,
+    type: 3}
+  m_PrefabInstance: {fileID: 613819854203825975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2066896391722074112
 GameObject:
   m_ObjectHideFlags: 0
@@ -54768,6 +54779,7 @@ MonoBehaviour:
   MinimalDamage: 3
   Level: 1
   Anim_levelup: {fileID: 1831164387}
+  anim: {fileID: 0}
 --- !u!1 &2066896391722074118
 GameObject:
   m_ObjectHideFlags: 0

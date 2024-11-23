@@ -10,6 +10,7 @@ public class PlayerBase : CharacterBase {
     private int resurrectCountDown = 5;
 
     public Animator Anim_levelup;
+    public Animator anim;
     public bool IsJumping { get; set; }
     public bool AttackBtnPressed { get; set; }
     private readonly bool attackEvent;
@@ -25,8 +26,8 @@ public class PlayerBase : CharacterBase {
 
     protected override void OnEnable() {
         base.OnEnable();
-        transform.position = StartPos;
-        transform.rotation = Quaternion.identity;
+        //transform.position = StartPos;
+        //transform.rotation = Quaternion.identity;
     }
 
     private void FixedUpdate() {
@@ -90,6 +91,7 @@ public class PlayerBase : CharacterBase {
             Rigid.AddForce(Vector3.up * 70, ForceMode.Impulse);
             SoundManager.Instance.playAudio("Jump");
             IsJumping = true;
+            anim.SetTrigger("doJump");
         }
     }
 
