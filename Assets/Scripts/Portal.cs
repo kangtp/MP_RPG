@@ -10,7 +10,7 @@ public class Portal : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Game2");
+            SceneManager.LoadScene("RabbitVillage");
         }
     }
 }

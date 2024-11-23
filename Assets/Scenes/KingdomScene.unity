@@ -14659,6 +14659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446521389}
   - component: {fileID: 446521388}
+  - component: {fileID: 446521390}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -14743,6 +14744,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &446521390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446521387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!4 &447106231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4702229198241056, guid: 0ba258545da721e488ecb71ffd143b6f,
@@ -24365,7 +24389,7 @@ PrefabInstance:
         type: 3}
       propertyPath: QuestList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 61721fd4c0a0f124cb73c0642c1349fe,
+      objectReference: {fileID: 11400000, guid: cbb6c296ab1e6b34b8a68f3847da088a,
         type: 2}
     - target: {fileID: 7122592269512151797, guid: 5b6e04cafa0c7ef4288755912a66dac8,
         type: 3}
@@ -68950,6 +68974,7 @@ MonoBehaviour:
   MaxExp: 30
   MinimalDamage: 3
   Level: 1
+  StartPos: {x: 0, y: 0, z: 0}
   Anim_levelup: {fileID: 1831164387}
   anim: {fileID: 0}
 --- !u!1 &2066896391722074118
