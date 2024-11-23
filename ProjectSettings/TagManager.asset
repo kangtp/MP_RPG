@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
+  - Melee
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - Fence
   - Buillding
   - Boss
-  - 
+  - weapon
   - 
   - 
   - 

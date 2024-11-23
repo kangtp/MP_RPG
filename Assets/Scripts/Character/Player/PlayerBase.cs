@@ -5,7 +5,7 @@ public class PlayerBase : CharacterBase {
 
     private ExpBar expBar;
     public Vector3 MoveDir { get; set; }
-    public Vector3 StartPos { get { return new Vector3(78f, 21.8f, 30f); } }
+    public Vector3 StartPos;
 
     private int resurrectCountDown = 5;
 
@@ -41,6 +41,7 @@ public class PlayerBase : CharacterBase {
     public bool PlayerInMonsterRange(Vector3 minRange, Vector3 maxRange) {
         return transform.position.x < maxRange.x && transform.position.x > minRange.x && transform.position.z < maxRange.z && transform.position.z > minRange.z;
     }
+
 
     public void Heal(float healthGain) {
         CurrentHealth += healthGain;
@@ -129,6 +130,13 @@ public class PlayerBase : CharacterBase {
         //플레이어가 플랫폼과 충돌할 때
         if(collision.gameObject.layer.Equals(13)) {
             IsJumping = false;
+        }
+
+        if(collision.gameObject.tag == "Boss")
+        {
+            TakeDamage(5);
+            SoundManager.Instance.playAudio("Hit");
+            ParticleController.PlayParticles("PlayerAttackParticle", transform);
         }
     }
 }
