@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum QuestState {
     Startable,
@@ -59,7 +60,10 @@ public class Rewards {
         bool addable = true;
         if(ItemReward != null)
             addable = Inventory.Instance.AddMultiple(ItemReward, ItemRewardCount);
-
+        if (ItemReward == null)
+        {
+            SceneManager.LoadScene("Game2 1");
+        }
         if(addable) {
             GameManager.Instance.player.IncreaseExp(EXPReward);
             if(ItemReward != null)
@@ -67,7 +71,6 @@ public class Rewards {
         }
         else
             NotificationManager.Instance.Generate_InventoryIsFull();
-
         return addable;
     }
 }

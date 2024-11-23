@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67901067f0a6394b9d3050950c65749, type: 3}
+  m_Name: FindRabbit_02.FightRabbit
+  m_EditorClassIdentifier: 
+  state: 0
+  title: "<\uCDA4\uCD94\uB294 \uD1A0\uB07C>"
+  content: "\uC751? \uB108 \uBB50\uC57C. \uB098 \uCDA4\uCD94\uB294 \uC911\uC778\uB370
+    \uBC29\uD574\uD558\uC9C0 \uB9D0\uACE0 \uC800\uB9AC\uAC00.\n\n\uD1A0\uB07C\uC5D0\uAC8C
+    \uB9D0\uC744 \uAC78\uC5B4 \uC6A9\uAD81\uC73C\uB85C \uB370\uB824\uAC00\uC790."
+  completeDialog: "\uBB50\uB77C\uACE0 \uC6A9\uC655\uB2D8\uC774 \uCC3E\uC73C\uC2E0\uB2E4\uACE0?
+    \uC54C\uAC8C \uBB50\uC57C!\n\uB098 \uCDA4\uCD94\uACE0 \uC788\uB294\uB370 \uBC29\uD574\uD558\uC9C0\uB9D0\uACE0
+    \uC800\uB9AC \uC369 \uAEBC\uC838!!"
+  collectObjectives: []
+  rewards:
+    ItemReward: {fileID: 0}
+    ItemRewardCount: 0
+    EXPReward: 0

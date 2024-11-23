@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KingdomScene.unity
     guid: f155f4c61b7369345968fb1f0bfae05e
+  - enabled: 1
+    path: Assets/Scenes/Game2 1.unity
+    guid: 86567043a0c16464a98d17aa4492b75c
+  - enabled: 1
+    path: Assets/Scenes/RabbitVillage.unity
+    guid: e9dfa9fdad8549246a933bf6759652f9
   m_configObjects: {}
