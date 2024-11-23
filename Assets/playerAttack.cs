@@ -18,8 +18,9 @@ public class playerAttack : MonoBehaviour
             BossMonster boss = hit.GetComponent<BossMonster>();
             if (boss != null)
             {
-                boss.Hp -= 10;
-                Debug.Log(boss.Hp);
+                boss.curHp -= 10;
+                boss.HandleHp();
+
             }
         }
     }
