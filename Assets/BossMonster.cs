@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossMonster : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class BossMonster : MonoBehaviour
     private float timeSinceLastAttack;
     private bool isAttacking = false;  // 공격 중 상태 확인용
 
+    private float maxHp = 100;
+    public float curHp = 100;
+
+    public Slider hpBar;
+
     public static BossMonster Instance;
-
-    public int Hp = 100;
-
     private void Awake() {
         Instance = this;
     }
@@ -22,6 +25,7 @@ public class BossMonster : MonoBehaviour
     void Start()
     {
         timeSinceLastAttack = 0f;
+        hpBar.value = (float) curHp / (float)maxHp;
     }
 
     void Update()
@@ -38,6 +42,11 @@ public class BossMonster : MonoBehaviour
         {
             RotateBoss();
         }
+    }
+
+    public void HandleHp()
+    {
+        hpBar.value = (float) curHp / (float)maxHp;
     }
 
     void RotateBoss()
