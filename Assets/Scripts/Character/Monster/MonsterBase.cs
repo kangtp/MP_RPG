@@ -30,6 +30,7 @@ public class MonsterBase : CharacterBase {
         healthBar.healthBarObj.SetActive(false);
         base.DieAnimEvent();
 
+
         //플레이어 능력치 추가
         player.IncreaseExp(MaxExp);
 

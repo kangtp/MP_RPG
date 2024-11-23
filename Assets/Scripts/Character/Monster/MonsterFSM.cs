@@ -71,7 +71,6 @@ public class MonsterFSM : CharacterFSM {
         do {
             yield return null;
             MoveController.LookTarget(transform, playerBase.transform, rotateSpeed);
-
             bool raycastTarget = characterBase.AttackToTarget("Player");
             if(!raycastTarget) {
                 if(playerBase.IsDie)
