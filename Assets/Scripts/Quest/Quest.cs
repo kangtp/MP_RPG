@@ -65,9 +65,9 @@ public class Rewards {
             if (ItemRewardCount == -1)   //용왕 가는 문 오픈
                 GameObject.FindObjectOfType<Door>().OpenDoor();
             else if (ItemRewardCount == 0)   //토끼 보스 맵 이동
-                SceneManager.LoadScene("Game2 1");
+                SceneManager.LoadScene("RabbitBoss");
             else if (ItemRewardCount == -2)
-                SceneManager.LoadScene("king"); //용왕 보스 맵 이동
+                SceneManager.LoadScene("KingBoss"); //용왕 보스 맵 이동
         }
         if(addable) {
             GameManager.Instance.player.IncreaseExp(EXPReward);
