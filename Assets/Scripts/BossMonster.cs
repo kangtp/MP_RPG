@@ -17,6 +17,7 @@ public class BossMonster : MonoBehaviour
 
     public Slider hpBar;
 
+    public GameObject potato;
     public static BossMonster Instance;
     private void Awake() {
         Instance = this;
@@ -47,6 +48,11 @@ public class BossMonster : MonoBehaviour
     public void HandleHp()
     {
         hpBar.value = (float) curHp / (float)maxHp;
+        if(curHp < 1)
+        {
+            potato.SetActive(true);
+            Destroy(this.gameObject);
+        }
     }
 
     void RotateBoss()
