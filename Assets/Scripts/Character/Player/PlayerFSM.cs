@@ -13,7 +13,6 @@ public class PlayerFSM : CharacterFSM {
             yield return null;
             if(!Joystick.IsPointerUp)
             {
-                UnityEngine.Debug.Log("들어와야지");
                 SetState(CharacterState.Walk);
             }
                 
