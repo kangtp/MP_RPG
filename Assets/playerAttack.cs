@@ -29,4 +29,24 @@ public class playerAttack : MonoBehaviour
         }
         }
     }
+
+    public void AttackBoss1()
+    {
+        if(can)
+        {
+        // 반경 내의 모든 콜라이더 감지
+        Collider[] hits = Physics.OverlapSphere(transform.position, attackRadius, bossLayer);
+
+        foreach (Collider hit in hits)
+        {
+            BossMonster2 boss = hit.GetComponent<BossMonster2>();
+            if (boss != null)
+            {
+                boss.curHp -= 10;
+                boss.HandleHp();
+
+            }
+        }
+        }
+    }
 }
