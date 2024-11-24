@@ -317,25 +317,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: doSwing
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -494,16 +494,16 @@ AnimatorStateMachine:
     m_Position: {x: -110, y: 90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3113293867265816567}
-    m_Position: {x: 90, y: 500, z: 0}
+    m_Position: {x: -90, y: 390, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -1495136368384294679}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 110, y: 400, z: 0}
+  m_AnyStatePosition: {x: -70, y: 290, z: 0}
   m_EntryPosition: {x: 210, y: 290, z: 0}
-  m_ExitPosition: {x: 110, y: 620, z: 0}
+  m_ExitPosition: {x: -70, y: 500, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -6443929060357876359}
 --- !u!1101 &8271086100207762408

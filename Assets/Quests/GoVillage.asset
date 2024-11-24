@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67901067f0a6394b9d3050950c65749, type: 3}
   m_Name: GoVillage
   m_EditorClassIdentifier: 
-  state: 0
+  state: 3
   title: "<\uC6A9\uC655\uB2D8\uC758 \uBA85\uB839>"
   content: "\uC774 \uBAB8\uC774 \uD070 \uBCD1\uC744 \uC5BB\uC5B4... \uBAB8\uC774
     \uC131\uCE58 \uC54A\uB2E4...\n\uC774 \uBCD1\uC774 \uB098\uC73C\uB824\uBA74 \uC800

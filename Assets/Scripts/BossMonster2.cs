@@ -13,6 +13,8 @@ public class BossMonster2 : MonoBehaviour
     private float maxHp = 100;
     public float curHp = 100;
 
+    public GameObject npc;
+
     private Animator animator;
 
     public Slider hpBar;
@@ -29,6 +31,7 @@ public class BossMonster2 : MonoBehaviour
         if(curHp < 1)
         {
             animator.SetBool("Die",true);
+            StartCoroutine(OnNpc());
         }
     }
 
@@ -60,5 +63,11 @@ public class BossMonster2 : MonoBehaviour
             // 발사 간격 대기
             yield return new WaitForSeconds(fireRate);
         }
+    }
+
+    private IEnumerator OnNpc()
+    {
+        yield return new WaitForSeconds (3.5f);
+        npc.SetActive(true);
     }
 }

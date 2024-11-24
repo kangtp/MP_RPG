@@ -68,6 +68,8 @@ public class Rewards {
                 SceneManager.LoadScene("RabbitBoss");
             else if (ItemRewardCount == -2)
                 SceneManager.LoadScene("KingBoss"); //용왕 보스 맵 이동
+            else if (ItemRewardCount == -4)
+                GameObject.Find("Dynamic Canvas").transform.GetChild(0).gameObject.SetActive(true);
         }
         if(addable) {
             GameManager.Instance.player.IncreaseExp(EXPReward);
