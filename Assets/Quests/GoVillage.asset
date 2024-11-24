@@ -12,22 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67901067f0a6394b9d3050950c65749, type: 3}
   m_Name: GoVillage
   m_EditorClassIdentifier: 
-  state: 1
-  title: "<\uB108\uAC00 \uC5BC\uB9C8\uB098 \uAC15\uD55C\uC9C0 \uC99D\uBA85\uD574\uC918!>"
+  state: 0
+  title: "<\uC6A9\uC655\uB2D8\uC758 \uBA85\uB839>"
   content: "\uC774 \uBAB8\uC774 \uD070 \uBCD1\uC744 \uC5BB\uC5B4... \uBAB8\uC774
     \uC131\uCE58 \uC54A\uB2E4...\n\uC774 \uBCD1\uC774 \uB098\uC73C\uB824\uBA74 \uC800
     \uC721\uC9C0\uC5D0 \uC788\uB294 \uD1A0\uB07C\uB77C\uB294 \uB3D9\uBB3C\uC758 \uAC04\uC744
     \uBA39\uC73C\uBA74 \uB0AB\uB294\uB2E4\uACE0 \uD558\uB354\uAD70...\n\uBCC4\uC8FC\uBD80\uC57C
     \uAC00\uC11C \uD1A0\uB07C\uC758 \uAC04\uC744 \uAC00\uC838\uC624\uB108\uB77C...\n\n\uC721\uC9C0\uB85C
-    \uC62C\uB77C\uAC00\uC11C <color=red>\uD1A0\uB07C</color>\uB97C \uCC3E\uC790."
-  completeDialog: "\uB300\uB2E8\uD55C\uAC78?? \uB108 \uC815\uB9D0 \uAC15\uD558\uAD6C\uB098..!!
-    \uBCF4\uC2A4\uB97C \uC7A1\uC73C\uB7EC \uAC08 \uC218 \uC788\uACA0\uC5B4! \uC5EC\uAE30
-    \uBCF4\uC0C1\uC774\uC57C!\n"
+    \uC62C\uB77C\uAC00\uC11C <color=red>\uD1A0\uB07C</color>\uB97C \uCC3E\uC790.\n<color=red>\uC67C\uCABD
+    \uBB38</color>\uC73C\uB85C \uB098\uAC00\uC790."
+  completeDialog: "\uD1A0\uB07C\uB97C \uC7A1\uC544 \uC654\uB290\uB0D0... \uC798\uD588\uB2E4..."
   collectObjectives:
-  - item: {fileID: 11400000, guid: b0e2214bdf6cb6044b315cf347b636e5, type: 2}
-    amount: 10
-  - item: {fileID: 11400000, guid: b1b2c912a36d1ec4abf2b08f63ddbb29, type: 2}
-    amount: 5
+  - item: {fileID: 11400000, guid: 7c2d706873c3a8348be577bcfd66f6ca, type: 2}
+    amount: 1
   rewards:
     ItemReward: {fileID: 11400000, guid: 53ba314436087af4fb7af8fcacbbb057, type: 2}
     ItemRewardCount: 8

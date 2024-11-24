@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -55,14 +56,18 @@ public class Rewards {
     public Item ItemReward;
     public int ItemRewardCount;
     public float EXPReward;
-
     public bool Reward() {
         bool addable = true;
         if(ItemReward != null)
             addable = Inventory.Instance.AddMultiple(ItemReward, ItemRewardCount);
         if (ItemReward == null)
         {
-            SceneManager.LoadScene("Game2 1");
+            if (ItemRewardCount == -1)   //용왕 가는 문 오픈
+                GameObject.FindObjectOfType<Door>().OpenDoor();
+            else if (ItemRewardCount == 0)   //토끼 보스 맵 이동
+                SceneManager.LoadScene("Game2 1");
+            else if (ItemRewardCount == -2)
+                SceneManager.LoadScene("king"); //용왕 보스 맵 이동
         }
         if(addable) {
             GameManager.Instance.player.IncreaseExp(EXPReward);

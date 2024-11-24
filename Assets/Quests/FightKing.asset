@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67901067f0a6394b9d3050950c65749, type: 3}
+  m_Name: FightKing
+  m_EditorClassIdentifier: 
+  state: 0
+  title: "<\uC6A9\uC655\uC758 \uC2E4\uCCB4>"
+  content: "\uADF8\uB798 \uBCC4\uC8FC\uBD80\uC57C... \uD1A0\uB07C\uC758 \uAC04\uC744
+    \uAC00\uC838\uC654\uAD6C\uB098...\n\uC5ED\uC2DC \uC790\uB124\uB294 \uCDA9\uC2E0\uC774\uC57C..."
+  completeDialog: "\uADFC\uB370 \uBCC4\uC8FC\uBD80\uC57C... \uC758\uC0AC \uC120\uC0DD\uC774
+    \uB9D0\uD558\uAE38...\n\uB108\uC758 \uAC04\uB3C4 \uD544\uC694\uD558\uB2E4\uACE0
+    \uD558\uB354\uAD6C\uB098...!!!!!!!\n\uC774\uB9AC\uC624\uB108\uB77C!!!!"
+  collectObjectives: []
+  rewards:
+    ItemReward: {fileID: 0}
+    ItemRewardCount: -2
+    EXPReward: 0
